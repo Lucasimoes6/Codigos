@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="https://www.w3schools.com/action_page.php">
+
+        <p>
+            <fieldset>
+                <legend>Data:</legend>
+                <label for="data">Data</label><br>
+                <input type="date" name="data" id="data">
+            </fieldset>
+        </p>    
+
+        <p>    
+            <fieldset>
+                <legend>Dados de acesso:</legend>
+                <label for="log">Usuário</label><br>
+                <input type="text" id="log" name="usuario"><br>
+                
+                <label for="senha">Senha</label><br>
+                <input type="password" id="senha" name="senha">
+            </fieldset>    
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <label for="Nome">Nome</label><br>
+                <input type="text" id="Nome" name="nome" value=""><br>
+
+                <label for="Endereço">Endereço</label><br>
+                <input type="text" id="Endereço" name="endereco" value=""><br>
+                
+                <label for="Número">Número</label><br>
+                <input type="number" id="Número" name="numero" value=""><br>
+
+                <label for="Complemento">Complemento</label><br>
+                <input type="text" id="Complemento" name="complemento"><br>
+
+                <label for="browser">Cidade</label><br>
+                <input list="browsers" name="cidade">
+                <datalist id="browsers">
+                    <option value="Sorocaba">
+                    <option value="Itapetininga">
+                    <option value="Tatui">
+                    <option value="Votorantim">
+                    <option value="Itu">
+                </datalist><br>
+
+                <label for="select">Estado</label><br>
+                <select id="Estado" name="estado">
+                    <option value="SP">SP</option>
+                    <option value="MG">MG</option>
+                    <option value="ES">ES</option>
+                    <option value="RJ">RJ</option>
+                </select><br>
+
+                <label for="CEP">CEP</label><br>
+                <input type="text" id="CEP" name="cep"><br>
+            </fieldset>
+        </p>
+
+        <p>
+            <fieldset>   
+                <legend>Gênero:</legend>
+                <input type="radio" id="Masculino" name="genero" value="Masculino" checked>
+                <label for="Masculino">Masculino</label><br>
+                <input type="radio" id="Feminino" name="genero" value="Feminino">
+                <label for="Feminino">Feminino</label><br>
+                <input type="radio" id="Prefiro não falar" name="genero" value="Prefiro não falar">
+                <label for="Prefiro não falar">Prefiro não falar</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Curso:</legend>
+                <input type="checkbox" name="curso" id="Ads" value="Ads">
+                <label for="Ads">Ads</label><br>
+
+                <input type="checkbox" name="curso" id="Jogos" value="Jogos">
+                <label for="Jogos">Jogos</label><br>
+
+                <input type="checkbox" name="curso" id="Gestão de TI" value="Gestão de TI">
+                <label for="Gestão de TI">Gestão de TI</label><br>
+
+                <input type="checkbox" name="curso" id="Banco de Dados" value="Banco de Dados">
+                <label for="Banco de Dados">Banco de Dados</label><br>
+            </fieldset>
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Modelo:</legend>
+                <input type="radio" id="Presencial" name="modelo" value="Presencial" checked>
+                <label for="Presencial">Presencial</label><br>
+
+                <input type="radio" id="EAD" name="modelo" value="EAD">
+                <label for="EAD">EAD</label><br>
+
+                <input type="radio" id="Semi Presencial" name="modelo" value="Semi Presencial">
+                <label for="Semi Presencial">Semi Presencial</label>
+            </fieldset>
+        </p>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
